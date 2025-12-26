@@ -1,68 +1,58 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <title>Mijn Website</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #4facfe, #00f2fe);
-      color: white;
-      text-align: center;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f2f2f2;
+        }
 
-    header {
-      padding: 60px 20px;
-    }
+        h1 {
+            color: #333;
+        }
 
-    h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
+        .search-box {
+            margin-top: 30px;
+        }
 
-    p {
-      font-size: 20px;
-      max-width: 600px;
-      margin: 0 auto 30px;
-    }
+        input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
 
-    .knop {
-      background: white;
-      color: #4facfe;
-      padding: 15px 30px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 18px;
-    }
+        input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 4px;
+        }
 
-    .knop:hover {
-      background: #e6e6e6;
-    }
-
-    footer {
-      margin-top: 80px;
-      padding: 20px;
-      font-size: 14px;
-      opacity: 0.8;
-    }
-  </style>
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <h1>Welkom op mijn website 🚀</h1>
-    <p>
-      Dit is mijn eerste website.  
-      Ik heb deze zelf gemaakt met HTML en CSS.
-    </p>
-    <a href="#" class="knop">Klik hier</a>
-  </header>
+    <h1>Welkom op mijn homepage!</h1>
+    <p>Gebruik de zoekbalk hieronder om iets te zoeken:</p>
 
-  <footer>
-    © 2025 - Mijn eerste website
-  </footer>
+    <div class="search-box">
+        <form action="https://www.google.com/search" method="get" target="_blank">
+            <input type="text" name="q" placeholder="Zoek op Google...">
+            <input type="submit" value="Zoeken">
+        </form>
+    </div>
 
 </body>
 </html>
